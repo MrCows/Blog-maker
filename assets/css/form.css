@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh
+}
+
+.form-header {
+    align-self: center;
+}
+
+.left-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 5px solid black;
+}
+
+.circle {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #ffdb58, #a37c27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 10%;
+}
+
+form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+body.dark-mode form button {
+    background-color: rgb(83, 83, 83);
+}
+
+body.dark-mode .circle {
+    background: linear-gradient(to bottom, #6b6b6b, #2e2e2e);
+}
+
+body.dark-mode .left-side {
+    background-color: #121212;
+    color: white;
+    border-right: 5px solid #676767;
+}
+
+body.dark-mode .right-side {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-mode .form {
+    background: gray;
+}

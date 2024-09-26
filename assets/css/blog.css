@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    border-bottom: 3px solid black;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+body.dark-mode header {
+    border-bottom: 3px solid #676767;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#backButton {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+/* Post Styles */
+.post {
+    background-color: white;
+    border: 2px solid black;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+body.dark-mode .post {
+    background-color: gray;
+}
+
+.post h2 {
+    font-size: 1.2rem;
+    margin-left: 0.3rem;
+    color: black;
+    margin-block-start: 0;
+    border-bottom: 2px solid black; /* Creates the line underneath the title */
+}
+
+.post p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+    font-style: italic;
+    margin-left: 0.7rem;
+    font-weight: bold;
+}
+
+body.dark-mode .post p {
+    color: rgb(44, 44, 44)
+}
+
+.post small {
+    color: gray;
+}
+
+body.dark-mode .post small {
+    color: rgb(41, 41, 41);
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 3px solid black;
+}
+
+body.dark-mode footer {
+    border-top: 3px solid #676767
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+body.dark-mode footer a {
+    color: gray
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
