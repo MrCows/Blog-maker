@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Blog</title>
+  <link rel="stylesheet" href="assets/css/form.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <button id="toggleDarkMode" class="dark-mode-toggle">🌞</button>
+
+  <div class="container">
+    <!-- Left... side... Giant yellow ball seen in preview -->
+    <div class="left-side">
+      <div class="circle">
+        My First Blog
+      </div>
+    </div>
+
+    <!-- Form on the right --> 
+    <div class="right-side">
+      <form id="blogForm">
+        <h2 class="form-header">What's on your mind?</h2>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" class="form" required>
+
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" class="form" required>
+
+        <label for="content">Content</label>
+        <textarea id="content" name="content" rows="5" class="form" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  
+  <script src="assets/js/form.js"></script>
+  <script src="assets/js/logic.js"></script>
+</body>
+</html>
